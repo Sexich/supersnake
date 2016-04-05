@@ -16,17 +16,33 @@ namespace ssnake
             Point p2 = new Point(4, 5, '#');
             p2.Draw();
 
-            /*int x1 = 1;
-            int y1 = 3;
-            char sym1 = '*';
+            Point p3 = new Point(2, 6, '$');
+            p3.Draw();
 
-            Draw(x1, y1, sym1);*/
+            Point p4 = new Point(3, 8, '@');
+            p4.Draw();
 
-            /*int x2 = 4;
-            int y2 = 5;
-            char sym2 = '#';
+            List<char> numList = new List<char>();
+            numList.Add( '%' );
+            numList.Add( '^' );
+            numList.Add( 'û' );
 
-            Draw(x2, y2, sym2);*/
+            char x = numList[0];
+            char y = numList[1];
+            char z = numList[2];
+
+            foreach( char i in numList)
+            {
+                Console.WriteLine(i);
+            }
+
+            /*numList.RemoveAt( 0 );*/
+
+            List<Point> pList = new List<Point>();
+            pList.Add( p1 );
+            pList.Add( p2 );
+            pList.Add( p3 );
+            pList.Add( p4 );
 
             Console.ReadLine();
         }

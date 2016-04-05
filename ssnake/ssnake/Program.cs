@@ -22,27 +22,11 @@ namespace ssnake
             Point p4 = new Point(3, 8, '@');
             p4.Draw();
 
-            List<char> numList = new List<char>();
-            numList.Add( '%' );
-            numList.Add( '^' );
-            numList.Add( 'û' );
+            HorizontalLine line1 = new HorizontalLine(5, 10, 8, '+');
+            line1.Draw();
 
-            char x = numList[0];
-            char y = numList[1];
-            char z = numList[2];
-
-            foreach( char i in numList)
-            {
-                Console.WriteLine(i);
-            }
-
-            /*numList.RemoveAt( 0 );*/
-
-            List<Point> pList = new List<Point>();
-            pList.Add( p1 );
-            pList.Add( p2 );
-            pList.Add( p3 );
-            pList.Add( p4 );
+            VerticalLine line2 = new VerticalLine(4, 8, 20, '+');
+            line2.Draw();
 
             Console.ReadLine();
         }

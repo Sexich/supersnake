@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ssnake
 {
-   /* class Snake : Figure
+    class Snake : Figure
     {
         public Snake( Point tail, int lenght, Direction direction)
         {

@@ -14,16 +14,16 @@ namespace ssnake
 
             HorizontalLine lineUp = new HorizontalLine(0, 78, 0, '+');
             HorizontalLine lineDown = new HorizontalLine(0, 78, 24, '+');
-            VerticalLine lineLeft = new VerticalLine(0, 24, 0, '+');
-            VerticalLine lineRight = new VerticalLine(0, 24, 78, '+');
+            VerticalLine lineLeft = new VerticalLine(0, 0, 24, '+');
+            VerticalLine lineRight = new VerticalLine(78, 0, 24, '+');
             lineUp.Draw();
             lineDown.Draw();
             lineLeft.Draw();
             lineRight.Draw();
 
             Point p = new Point(4, 5, '*');
-            /*Snake snake = new Snake(p, 4, Direction.RIGHT);
-            snake.Draw();*/
+            Snake snake = new Snake(p, 4, Direction.RIGHT);
+            snake.Draw();
 
             Console.ReadLine();
         }

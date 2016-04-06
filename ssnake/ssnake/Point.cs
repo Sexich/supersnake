@@ -31,7 +31,7 @@ namespace ssnake
             sym = p.sym;
         }
 
-        /*public void Move(int offset, Direction direction)
+        public void Move(int offset, Direction direction)
         {
             if(direction == Direction.RIGHT)
             {
@@ -49,7 +49,7 @@ namespace ssnake
             {
                 y = y - offset;
             }
-        }*/
+        }
 
         public void Draw()
         {
@@ -57,9 +57,9 @@ namespace ssnake
             Console.Write(sym);
         }
 
-        /*public override string ToString()
+        public override string ToString()
         {
             return x + ", " + y + ", " + sym;
-        }*/
+        }
     }
 }
